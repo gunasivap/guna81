@@ -1,69 +1,44 @@
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
+.view-content {
+  height: 100vh;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
-aside {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin: 10px 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-aside .profile {
-  margin: 20px auto;
+.mob-view {
+  margin: 10px;
   padding: 20px 0px;
   width: 300px;
   height: 500px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#7979ee), to(#71e4b8));
   background-image: linear-gradient(#7979ee, #71e4b8);
-  border: 2px solid black;
-  border-top: 20px solid black;
-  border-bottom: 20px solid black;
+  border: 2px solid rgb(17, 17, 17);
+  border-top: 20px solid rgb(17, 17, 17);
+  border-bottom: 20px solid rgb(17, 17, 17);
   border-radius: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 0.4s;
+  flex-direction: column;
+  align-items: center;
   transition: 0.4s;
 }
 
-aside .profile:hover {
-  padding: 22px 0;
-  -webkit-box-shadow: 4px 4px 4px 4px #2b2a2a;
-          box-shadow: 4px 4px 4px 4px #2b2a2a;
-}
-
-aside .profile-pic {
+.profile-pic {
   max-width: 320px;
   max-height: 180px;
   border-radius: 25%;
+  background-color: white;
 }
 
-aside .details {
+.details {
   margin: 10px;
   color: #3d3c3c;
 }
 
-aside .details h4 {
+.details h4 {
   font-size: large;
   color: #073a4e;
 }
 
-aside .contact-btn {
+.contact-btn {
   padding: 10px 20px;
   background: #adafad;
   border: 2px solid #dd38ac;
@@ -72,46 +47,28 @@ aside .contact-btn {
   transition: 0.4s;
 }
 
-aside .contact-btn:hover {
+.contact-btn:hover {
+  color: whitesmoke;
   background: #dd38ac;
 }
 
-article {
-  margin: 10px 20px;
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
-  font-size: medium;
-  letter-spacing: 1px;
-  line-height: 2;
+.lap-view {
+  margin: 10px;
+  
 }
-
-article .about {
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+.screen {
+  width: 600px;
+  height: 300px;
+  border: 20px solid rgb(17, 17, 17);
+  border-radius: 20px;
 }
-
-article .skill-con {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.keyboard {
+  width: 600px;
+  height: 200px;
+  border: 20px solid rgb(17, 17, 17);
+  border-radius: 20px;
 }
-
-article .skill-con ul {
-  width: 50%;
-  margin: 0;
-  padding: 10px;
-  background: rgba(128, 128, 128, 0.5);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-article .skill-con ul li {
-  text-align: center;
-  margin: 5px;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
+.screen * {
+  margin: 20px;
 }
 /*# sourceMappingURL=index.css.map */
