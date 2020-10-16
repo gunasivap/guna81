@@ -1,0 +1,46 @@
+
+/* contact styles */
+header h1 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h2 {
+    margin-bottom: 20px;
+}
+.container > div {
+    margin: 20px;
+    min-width: 50%;
+}
+.social {
+    overflow: auto;
+}
+
+.social li {
+    float: left;
+    margin: 10px;
+}
+.social .fa {
+    padding: 10px;
+    background-color: rgb(88, 88, 233);
+}
+.fa-google {
+    color: rgb(202, 5, 5);
+}
+
+.contact-form form {
+    margin: 10px;
+}
+.contact-form form div * {
+    margin: 10px 0;
+}
+.contact-form input[type="text"], input[type="email"], textarea {
+    padding: 5px;
+    min-width: 50%;
+}
+.contact-form button {
+    padding: 5px 10px;
+}

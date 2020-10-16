@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* pr-loader animation */
+
+/* watch animation */
+#loader-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.watch {
+  border: 10px solid rgb(255, 255, 255);
+  border-left: 10px solid rgb(0, 0, 0);
+  border-right: 10px solid rgb(0, 0, 0);
+  border-radius: 100%;
+}
+.watch-in {
+  width: 150px;
+  height: 150px;
+  background: rgb(255, 255, 255);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  animation: watch_spin 2s linear infinite;
+}
+.left {
+  position: absolute;
+  left: -25px;
+  width: 50%;
+  height: 50%;
+  background: black;
+  transform: rotate(45deg);
+}
+.right {
+  position: absolute;
+  right: -25px;
+  width: 50%;
+  height: 50%;
+  background: black;
+  transform: rotate(45deg);
+}
+@keyframes watch_spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.load-txt {
+  margin: 10px;
+  position: relative;
+  font-family: cursive, fantasy, sans-serif;
+  font-size: 2.5rem;
+}
+.loaded #loader-wrapper {
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: all 0.2s 1s ease-out;
+}
+
+/* internal nav */
+.side-nav {
+  z-index: 7;
+}
+
+.nav-in {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(4, 104, 90);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  z-index: 8;
+}
+
+.nav-in * {
+  width: 50px;
+
+}
+
+.nav-in .fa {
+  font-size: 1.5em;
+  padding: 10px;
+  border-bottom: 2px solid rgb(5, 131, 114);
+}
+
+.nav-in svg {
+  margin: 10px 0;
+  transform: scale(1.4);
+}
+
+.nav-in .active {
+  background-color: rgb(5, 131, 114);
+
+}
+
+/* theme packs */
+#theme-pack {
+  background-image: linear-gradient(45deg, rgb(103, 238, 13), rgb(14, 210, 236));
+  margin-left: 60px;
+  padding: 10px;
+  padding-bottom: 20px;
+  width: 100px;
+  height: 160px;
+  border-radius: 10px;
+  position: fixed;
+  top: 41%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 9;
+}
+
+.fa-remove {
+  color: rgb(22, 22, 22);
+  padding: 0 6px;
+  font-size: 2em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#light {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#dark {
+  background-color: rgb(22, 22, 22);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#dark:hover,
+#light:hover {
+  opacity: 0.8;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.fa {
+  text-align: center;
+}
+
+/* header top */
+.top {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-size: large;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.logo h1 {
+  display: none;
+
+}
+
+.topnav a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.4s;
+}
+
+/* footer icon styles */
+footer .fa {
+  color: white !important;
+  margin: 5px 2px;
+  padding: 10px 15px;
+  font-size: 30px;
+  border-radius: 15px;
+  width: 40px;
+
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+}
+
+.fa-youtube {
+  background: #bb0000;
+}
+
+/* footer styles */
+footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+  letter-spacing: 1px;
+}
+
+footer p a {
+  font-size: large;
+}

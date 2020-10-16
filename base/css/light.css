@@ -1,0 +1,28 @@
+/* light theme */
+
+body {
+    background-color: white;
+    color: rgb(22, 22, 22);
+}
+
+.secondary-bg {
+    background-color: rgb(214, 209, 209);
+}
+
+a {
+    color: rgb(22, 22, 22);
+}
+
+.top {
+    background-color: white;
+}
+
+.topnav a:hover {
+    background-color: rgba(212, 205, 205, 0.5);
+    color: rgb(220, 22, 22);
+}
+
+.topnav a.active {
+    background-color: rgba(212, 205, 205, 0.5);
+    color: rgb(220, 22, 22);
+}

@@ -4,7 +4,7 @@
 <head>
     <title>Guna - Developer</title>
 
-    <!-- meta info -->
+    <!-- meta data -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -12,16 +12,22 @@
     <meta name="keywords" content="programmer, web-developer, software-developer">
     <meta name="author" content="Guna">
 
-    <!-- external static link-->
+    <!-- static assets -->
     <!-- fevicon -->
-    <link rel="shortcut icon" type="image/png" href="img/guna81-logo.png">
-    <!-- font awesome icons-->
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+
+    <!-- icon fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- css -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" rel="stylesheet" href="base/css/base.css">
+    <link rel="stylesheet" rel="stylesheet" href="css/home.css">
+    <link id="theme-pick0" rel="stylesheet" href="base/css/dark.css">
+    <link id="theme-pick1" rel="stylesheet" href="css/home-dark.css">
+
     <!-- js -->
-    <script src="js/base.js"></script>
+    <script defer src="base/js/base.js"></script>
+    <script defer src="js/index.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177858283-2"></script>
@@ -40,58 +46,76 @@
 
 <body>
 
-    <header>
-        <section class="top">
+    <div class="top">
+        <div>
+            <a class="logo" href="/">
+                <img src="img/logo.png" alt="guna81">
+            </a>
+        </div>
+
+        <nav class="topnav" id="myTopnav">
+            <a class="link active" href="/">HOME</a>
+            <a class="link" href="/project">PROJECTS</a>
+            <a class="link" href="http://genius81.epizy.com" target="_blank">BLOG</a>
+            <a class="link" href="/contact">CONTACT</a>
+
+        </nav>
+    </div>
+
+    <div class="side-nav">
+        <nav class="nav-in">
+            <a href="#home"><i class="active fa fa-home"></i></a>
+            <a href="#about-me"><i class="fa fa-address-card"></i></a>
+            <a href="#skills"><i class="fa fa-code"></i></a>
+            <svg id="theme-btn" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z" />
+            </svg>
+        </nav>
+
+        <div id="theme-pack" style="display: none;">
+            <span id="the-close" class="fa fa-remove"></span>
+            <span id="dark"></span>
+            <span id="light"></span>
+        </div>
+    </div>
+
+
+    <header class="head-content">
+        <div class="intro">
+            <h1>
+                <span class="h">Hello,</span>
+                <br>
+                <span class="h">I am Guna,</span>
+                <br>
+                <span class="h">Web Developer</span>
+            </h1>
+
             <div>
-                <a class="logo" href="http://guna81.epizy.com">
-                    <img src="img/logo.png" alt="logo">
-                    <h1>Guna81</h1>
-                </a>
+                <a class="fa fa-facebook" href="https://www.facebook.com/guna810" target="_blank"></a>
+                <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCYcYgAfz7ApEMhwo2ItvO1w"
+                    target="_blank"></a>
             </div>
-            <nav class="topnav" id="myTopnav">
-                <a class="link active" href="http://guna81.epizy.com">HOME</a>
-                <a class="link" href="apps.html">PROJECTS</a>
-                <a class="link" href="http://genius81.epizy.com" target="_blank">BLOG</a>
-                <a class="link" href="contact.html">CONTACT</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </nav>
-        </section>
+        </div>
 
-        <section class="head-content">
-            <div class="intro">
-                <h2>
-                    <span class="intro-t">Hello,</span>
-                    <br>
-                    <span class="intro-t">I am Guna,</span>
-                    <br>
-                    <span class="intro-lt">Web Developer</span>
-
-                </h2>
-                <div>
-                    <a class="fa fa-facebook" href="https://www.facebook.com/guna810" target="_blank"></a>
-                    <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCYcYgAfz7ApEMhwo2ItvO1w"
-                        target="_blank"></a>
-                </div>
+        <div class="mob gad">
+            <span class="cam"></span>
+            <img class="dp" src="img/avatar.jpg" alt="display picture">
+            <div class="bio">
+                <h3>Bio</h3>
+                <p>Date of Birth : <span>08-01-2000</span></p>
+                <p>Place : <span>Tamil Nadu, India</span></p>
+                <p>Email : <span>gunasivapsg@gmail.com</span></p>
             </div>
-
-            <div class="mob">
-                <span class="cam"></span>
-                <img class="dp" src="img/avatar.jpg" alt="display picture">
-                <div class="bio">
-                    <h3>Bio</h3>
-                    <p>Date of Birth : <span>08-01-2000</span></p>
-                    <p>Place : <span>Tamil Nadu, India</span></p>
-                    <p>Email : <span>gunasivapsg@gmail.com</span></p>
-                </div>
-                <a href="/contact.html"><button class="mob-contact">Contact</button></a>
-            </div>
-        </section>
+            <a href="/contact.html"><button class="mob-contact">Contact</button></a>
+        </div>
+        <div class="header-bg"></div>
     </header>
 
-    <section class="about-me">
-        <div class="tab">
+
+    <section class="secondary-bg about-me" id="about-me">
+        <div class="tab gad">
             <h2>About Me</h2>
             <p class="about">
                 Hi, I am Guna. A passionate web developer from India. I will develop fast and dynamic websites with easy
@@ -99,39 +123,36 @@
                 Available for freelance or remote jobs. I will do the best in my work. If you need help, feel free to
                 contact me. Have a good time.
             </p>
-            <span class="h-btn"></span>
+            <span class="tab-btn"></span>
         </div>
 
     </section>
 
-    <main>
-        <section class="skills">
-            <h2>My Skills</h2>
-            <div class="skill-con">
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-con">
 
-                <figure>
-                    <img class="svg" src="img/skill/html.svg" alt="html">
-                    <figcation>Html</figcation>
-                </figure>
-                <figure>
-                    <img class="svg" src="img/skill/css.svg" alt="css">
-                    <figcation>Css</figcation>
-                </figure>
-                <figure>
-                    <img class="svg" src="img/skill/javascript.svg" alt="javascript">
-                    <figcation>JavaScript</figcation>
-                </figure>
-                <figure>
-                    <img class="svg" src="img/skill/python.svg" alt="python">
-                    <figcaption>Python</figcaption>
-                </figure>
+            <figure>
+                <img class="svg" src="img/skills/html.svg" alt="html">
+                <figcation class="skill-title">Html</figcation>
+            </figure>
+            <figure>
+                <img class="svg" src="img/skills/css.svg" alt="css">
+                <figcation class="skill-title">Css</figcation>
+            </figure>
+            <figure>
+                <img class="svg" src="img/skills/javascript.svg" alt="javascript">
+                <figcation class="skill-title">JavaScript</figcation>
+            </figure>
+            <figure>
+                <img class="svg" src="img/skills/python.svg" alt="python">
+                <figcaption class="skill-title">Python</figcaption>
+            </figure>
 
-            </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
-
-    <footer>
+    <footer class="secondary-bg">
         <p>Created By
             <a href="http://guna81.epizy.com">Guna</a>
         </p>
@@ -141,6 +162,23 @@
                 target="_blank"></a>
         </div>
     </footer>
+
+    <div class="fixed-contents">
+    
+        <div id="loader-wrapper">
+            <div class="watch">
+                <div class="watch-in">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div class="load-txt">Loading</div>
+        </div>
+
+    </div>
+
 </body>
+
+
 
 </html>
