@@ -13,12 +13,3 @@ body {
     background-color: rgb(22, 22, 22);
 }
 
-.topnav a:hover {
-    background-color: rgba(44, 44, 44, 0.5);
-    color: #09a509;
-}
-
-.topnav a.active {
-    background-color: rgba(44, 44, 44, 0.5);
-    color: #09a509;
-}

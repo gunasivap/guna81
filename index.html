@@ -54,10 +54,10 @@
         </div>
 
         <nav class="topnav" id="myTopnav">
-            <a class="link active" href="/">HOME</a>
-            <a class="link" href="/project">PROJECTS</a>
-            <a class="link" href="http://genius81.epizy.com" target="_blank">BLOG</a>
-            <a class="link" href="/contact">CONTACT</a>
+            <a class="nav-link active" href="/">HOME</a>
+            <a class="nav-link" href="/project">PROJECTS</a>
+            <a class="nav-link" href="http://genius81.epizy.com" target="_blank">BLOG</a>
+            <a class="nav-link" href="/contact">CONTACT</a>
 
         </nav>
     </div>
@@ -82,14 +82,23 @@
     </div>
 
 
-    <header class="head-content">
+    <header>
+        <div id="move-spider">
+            <div class="web-spider">
+                <div class="web"></div>
+                <div class="moving">
+                    <img class="spider" src="/img/spider-3.png" alt="">
+                    <div class="r-move" onmouseover="moveSpider('right')"></div>
+                    <div class="l-move" onmouseover="moveSpider('left')"></div>
+                </div>
+            </div>
+        </div>
+
         <div class="intro">
-            <h1>
-                <span class="h">Hello,</span>
-                <br>
-                <span class="h">I am Guna,</span>
-                <br>
-                <span class="h">Web Developer</span>
+            <h1 class="typing-animation">
+                <div>Hello,</div>
+                <div>I am Guna,</div>
+                <div>Web Developer</div>
             </h1>
 
             <div>
@@ -99,6 +108,11 @@
             </div>
         </div>
 
+        <div class="header-bg"></div>
+    </header>
+
+
+    <section class="secondary-bg about-me" id="about-me">
         <div class="mob gad">
             <span class="cam"></span>
             <img class="dp" src="img/avatar.jpg" alt="display picture">
@@ -110,11 +124,7 @@
             </div>
             <a href="/contact.html"><button class="mob-contact">Contact</button></a>
         </div>
-        <div class="header-bg"></div>
-    </header>
 
-
-    <section class="secondary-bg about-me" id="about-me">
         <div class="tab gad">
             <h2>About Me</h2>
             <p class="about">
@@ -164,7 +174,7 @@
     </footer>
 
     <div class="fixed-contents">
-    
+
         <div id="loader-wrapper">
             <div class="watch">
                 <div class="watch-in">

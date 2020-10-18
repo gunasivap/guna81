@@ -172,3 +172,38 @@
 </body>
 
 </html>
+
+
+.link-before,
+.link-after {
+  content: '';
+  background: #fff;
+  height: 50%;
+  width: 0;
+  position: absolute;
+  transition: .3s cubic-bezier(.785, .135, .15, .86);
+}
+
+.link-before {
+  top: 0;
+  left: 0;
+  right: auto;
+}
+
+.link-after {
+  bottom: 0;
+  right: 0;
+  left: auto;
+}
+
+.nav-link:hover.link-before {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+
+.nav-link:hover .link-after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
