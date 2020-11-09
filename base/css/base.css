@@ -292,6 +292,7 @@ footer .fa-youtube {
 footer p {
   position: absolute;
   bottom: 10px;
+  text-align: center;
   letter-spacing: 0.8px;
 }
 
@@ -432,7 +433,7 @@ footer p {
 
   footer {
     padding: 10px 50px;
-    height: 100px;
+    height: 150px;
   }
 
   * {
