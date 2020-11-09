@@ -1,32 +1,16 @@
-/* theme picker */
-const light = document.querySelector("#light")
-const dark = document.querySelector("#dark")
-const pick0 = document.querySelector("#theme-pick0")
-const pick1 = document.querySelector("#theme-pick1")
+/* input lable animation */
 
-light.onclick = () => {
-    localStorage.setItem("theme", "light")
-    let theme = localStorage.getItem("theme")
-    currentTheme(theme)
+const inputs = document.querySelectorAll('input, textarea')
+
+inputs.forEach(labelAnimation)
+
+function labelAnimation(el) {
+
+    el.addEventListener('input', e => {
+        if (e.target.value) {
+            e.target.classList.add('has-value')
+        } else {
+            e.target.classList.remove('has-value')
+        }
+    })
 }
-dark.onclick = () => {
-    localStorage.setItem("theme", "dark")
-    let theme = localStorage.getItem("theme")
-    currentTheme(theme)
-
-}
-
-function currentTheme(theme) {
-    if (theme === "light") {
-        pick0.href = "../base/css/light.css"
-        pick1.href = "css/contact-light.css"
-    } else {
-        pick0.href = "../base/css/dark.css"
-        pick1.href = "css/contact-dark.css"
-    }
-
-}
-
-let theme = localStorage.getItem("theme")
-currentTheme(theme)
-

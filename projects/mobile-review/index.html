@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Contact - Guna</title>
+    <title>Mobile Review Site - Guna81 Apps</title>
+
     <!-- meta data -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="Contact Me - I am Guna, a passionate web developer and programmer from India. Working with the latest web technologies and more">
+        content="Mobile Review Site- I am Guna, a passionate web developer and programmer from India. Working with the latest web technologies and more">
     <meta name="keywords" content="programmer, web-developer, software-developer">
     <meta name="author" content="Guna">
 
@@ -20,11 +21,13 @@
 
     <!-- css -->
     <link rel="stylesheet" href="/base/css/base.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="../css/project.css">
 
     <!-- js -->
     <script defer src="/base/js/base.js"></script>
-    <script defer src="js/contact.js"></script>
+    <script defer src="js/mobile-review.js"></script>
+    <script defer src="../js/project.js"></script>
+
 </head>
 
 <body>
@@ -56,71 +59,91 @@
                 </nav>
 
                 <div id="themes">
-                    <span id="light"></span>
                     <span id="dark"></span>
+                    <span id="light"></span>
                 </div>
 
                 <nav class="external-nav">
                     <a class="nav-link" href="/">HOME</a>
-                    <a class="nav-link" href="/projects">PROJECTS</a>
+                    <a class="nav-link" href="/projects/">PROJECTS</a>
                     <a class="nav-link" href="http://genius81.epizy.com" target="_blank">BLOG</a>
-                    <a class="nav-link active" href="/contact/">CONTACT</a>
+                    <a class="nav-link" href="/contact">CONTACT</a>
                 </nav>
             </div>
 
         </div>
     </div>
 
-    <!-- header section -->
-    <header class="primary-bg">
-        <h1>Contact Me</h1>
+    <!-- apps Details -->
+    <div class="container primary-bg">
+        <header>
+            <h1>Mobile Review Site <button class="visit-btn"><a href="">Visit</a></button></h1>
+            <p>A mobile review model using python - django</p>
+        </header>
 
-    </header>
+        <section class="image-container">
 
-    <!-- contact container -->
-    <section class="container primary-bg">
+            <div class="small-image">
+                <figure>
+                    <img class="current-img" src="img/ssht0.png" alt="mobile-review-site" title="Click to fullscreen"
+                        onclick="popupDisplay('block');">
 
-        <div class="social-contact">
-            <h2>Social</h2>
-            <a href="https://www.facebook.com/guna8100" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.youtube.com/channel/UCYcYgAfz7ApEMhwo2ItvO1w" target="_blank"><i
-                    class="fa fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/in/guna-p-b6092a1b3/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/gunasivap" target="_blank"><i class="fa fa-github"></i></a>
-        </div>
+                    <span class="prev" onclick="navImg(-1)">&#10094;</span>
+                    <span class="next" onclick="navImg(1)">&#10095;</span>
 
-        <div class="contact-form">
-            <h2>Form</h2>
-            <form onsubmit="popMsg()">
-                <div>
-                    <input id="name" type="text" name="name" autocomplete="off" required>
-                    <label for="name">Name</label>
-                </div>
+                </figure>
 
-                <div>
-                    <input id="email" type="email" name="email" autocomplete="off" required>
-                    <label for="email">Email</label>
+                <div class="switch-img">
 
                 </div>
+            </div>
 
-                <div class="message">
-                    <textarea id="msg" name="msg" cols="30" rows="10"></textarea required>
-                    <label for="msg">Message</label>
+            <div id="popup-model">
+                <span class="close" onclick="popupDisplay('none');">&times;</span>
+
+                <div class="full-image">
+                    <img class="current-img" src="img/ssht0.png" alt="mobile-review-site">
                 </div>
 
-                <button class="contact-btn" type="submit">Submit</button>
+                <span class="prev" onclick="navImg(-1)">&#10094;</span>
+                <span class="next" onclick="navImg(1)">&#10095;</span>
+            </div>
 
-            </form>
-        </div>
+        </section>
 
-    </section>
+        <section class="about">
+            <h2>About</h2>
+            <p>A mobile review model using python - Django and jquery. On this site, users can get mobile models' images
+                and specifications, and price by searching models and company name. Users can see existing reviews of
+                the mobile models and write their reviews with star ratings. And They can compare two mobiles. Recently
+                visited mobile details and comparisons will be indexed on the home page.</p>
+
+        </section>
+
+        <section class="techs">
+            <h2>Tehchnologies</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Jquery</li>
+                <li>Python - Django</li>
+            </ul>
+
+        </section>
+
+        <section class="source">
+            <h2>Source</h2>
+            <p>Github Chat box - <a href="https://github.com" target="_blank">get source</a></p>
+        </section>
+    </div>
 
     <!-- footer section-->
     <footer class="secondary-bg">
         <div class="footer-left">
             <ul class="bottom-nav">
                 <li><a href="/">Home</a></li>
-                <li><a href="/projects">Projects</a></li>
+                <li><a href="/project">Projects</a></li>
                 <li><a href="http://genius81.epizy.com">Blog</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
@@ -131,7 +154,7 @@
 
         <div class="footer-right">
             <div class="social">
-                <a class="fa fa-facebook" href="https://www.facebook.com/guna8100" target="_blank"></a>
+                <a class="fa fa-facebook" href="https://www.facebook.com/guna810" target="_blank"></a>
                 <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCYcYgAfz7ApEMhwo2ItvO1w"
                     target="_blank"></a>
             </div>
@@ -142,12 +165,6 @@
     <!-- overlay-->
     <div class="overlay"></div>
 
-    <script>
-        function popMsg(){
-            alert("Contact form currently unavailable. Please contact via email")
-            return false
-        }
-    </script>
 </body>
 
 </html>

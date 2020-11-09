@@ -2,29 +2,29 @@
 <html lang="en">
 
 <head>
-    <title>Contact - Guna</title>
+    <title>Projects - Guna</title>
+
     <!-- meta data -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="Contact Me - I am Guna, a passionate web developer and programmer from India. Working with the latest web technologies and more">
+        content="Check My Web Apps - I am Guna, a passionate web developer and programmer from India. Working with the latest web technologies and more">
     <meta name="keywords" content="programmer, web-developer, software-developer">
     <meta name="author" content="Guna">
 
     <!-- static assets -->
-    <!-- fevicon -->
+    <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="/base/img/logo.png">
 
-    <!-- icon fonts -->
+    <!-- icon-fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- css -->
     <link rel="stylesheet" href="/base/css/base.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/projects.css">
 
     <!-- js -->
     <script defer src="/base/js/base.js"></script>
-    <script defer src="js/contact.js"></script>
 </head>
 
 <body>
@@ -62,9 +62,9 @@
 
                 <nav class="external-nav">
                     <a class="nav-link" href="/">HOME</a>
-                    <a class="nav-link" href="/projects">PROJECTS</a>
+                    <a class="nav-link active" href=".">PROJECTS</a>
                     <a class="nav-link" href="http://genius81.epizy.com" target="_blank">BLOG</a>
-                    <a class="nav-link active" href="/contact/">CONTACT</a>
+                    <a class="nav-link" href="/contact">CONTACT</a>
                 </nav>
             </div>
 
@@ -73,47 +73,59 @@
 
     <!-- header section -->
     <header class="primary-bg">
-        <h1>Contact Me</h1>
-
-    </header>
-
-    <!-- contact container -->
-    <section class="container primary-bg">
-
-        <div class="social-contact">
-            <h2>Social</h2>
-            <a href="https://www.facebook.com/guna8100" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.youtube.com/channel/UCYcYgAfz7ApEMhwo2ItvO1w" target="_blank"><i
-                    class="fa fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/in/guna-p-b6092a1b3/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/gunasivap" target="_blank"><i class="fa fa-github"></i></a>
+        <div>
+            <h1>My Projects</h1>
         </div>
 
-        <div class="contact-form">
-            <h2>Form</h2>
-            <form onsubmit="popMsg()">
-                <div>
-                    <input id="name" type="text" name="name" autocomplete="off" required>
-                    <label for="name">Name</label>
-                </div>
-
-                <div>
-                    <input id="email" type="email" name="email" autocomplete="off" required>
-                    <label for="email">Email</label>
-
-                </div>
-
-                <div class="message">
-                    <textarea id="msg" name="msg" cols="30" rows="10"></textarea required>
-                    <label for="msg">Message</label>
-                </div>
-
-                <button class="contact-btn" type="submit">Submit</button>
-
+        <div>
+            <form id="search-form" action="" onsubmit="return false">
+                <input class="search-input" type="search" name="search" id="search-input" placeholder="search projects"
+                    autocomplete="off">
+                <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
             </form>
+        </div>
+    </header>
+
+    <!-- apps section -->
+    <section class="container primary-bg">
+
+        <div class="project">
+            <figure>
+                <img src="img/chat-app.jpg" alt="chat-app">
+            </figure>
+
+            <div class="title">
+                <h3>Chat Box</h3>
+                <p>web app</p>
+
+                <div>
+                    <a href="https://chatbox81.herokuapp.com" target="_blank"><button>Visit</button></a>
+                    <a href="chat-app"><button>Details</button></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="project">
+            <figure>
+                <img src="img/mobile-review.jpg" alt="mobile-review">
+            </figure>
+
+            <div class="title">
+                <h3>Mobile review model</h3>
+                <p>web app</p>
+
+                <div>
+                    <a href="https://mobilereview.herokuapp.com" target="_blank"><button>Visit</button></a>
+                    <a href="mobile-review"><button>Details</button></a>
+                </div>
+            </div>
+
         </div>
 
     </section>
+
 
     <!-- footer section-->
     <footer class="secondary-bg">
@@ -131,7 +143,7 @@
 
         <div class="footer-right">
             <div class="social">
-                <a class="fa fa-facebook" href="https://www.facebook.com/guna8100" target="_blank"></a>
+                <a class="fa fa-facebook" href="https://www.facebook.com/guna810" target="_blank"></a>
                 <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCYcYgAfz7ApEMhwo2ItvO1w"
                     target="_blank"></a>
             </div>
@@ -142,12 +154,6 @@
     <!-- overlay-->
     <div class="overlay"></div>
 
-    <script>
-        function popMsg(){
-            alert("Contact form currently unavailable. Please contact via email")
-            return false
-        }
-    </script>
 </body>
 
 </html>
