@@ -248,20 +248,13 @@ a {
 
 /* footer */
 footer {
-  padding: 20px;
-  height: 200px;
+  padding: 20px 200px;
+  height: 180px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   position: relative;
 }
 
-.footer-left {
-  margin-left: -80px;
-}
-
-.footer-right {
-  margin-left: 80px;
-}
 
 .footer-left li {
   margin: 4px;
@@ -271,7 +264,7 @@ footer {
 }
 
 footer .social {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 footer .fa {
@@ -298,7 +291,7 @@ footer .fa-youtube {
 
 footer p {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   letter-spacing: 0.8px;
 }
 
@@ -437,12 +430,8 @@ footer p {
     width: 100%;
   }
 
-  .footer-left {
-    margin-left: -40px;
-  }
-
-  .footer-right {
-    margin-left: 40px;
+  footer {
+    padding: 10px 50px;
   }
 
   * {
