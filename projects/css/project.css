@@ -29,12 +29,10 @@ header h1 {
 
 
 .visit-btn:hover {
+    color: white;
     background-color: royalblue !important;
 }
 
-.visit-btn:hover a {
-    color: white;
-}
 
 header p {
     color: rgb(48, 48, 48);
@@ -201,17 +199,14 @@ h2 {
     .full-image {
         width: 100%;
     }
-    
+
 }
 
 /* light theme */
 
 .light .visit-btn {
-    background-color: rgb(212, 212, 212);
-}
-
-.light .visit-btn a {
     color: rgb(48, 48, 48);
+    background-color: rgb(212, 212, 212);
 }
 
 .light header p {
@@ -252,12 +247,10 @@ h2 {
 /* dark theme */
 
 .dark .visit-btn {
+    color: rgb(224, 224, 224);
     background-color: rgb(32, 32, 32);
 }
 
-.dark .visit-btn a {
-    color: rgb(224, 224, 224);
-}
 
 .dark header p {
     color: rgb(224, 224, 224);
