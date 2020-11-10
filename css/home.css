@@ -192,6 +192,10 @@ header {
 
 /* introduction */
 
+.intro {
+  margin-top: -50px;
+}
+
 .intro h1 {
   margin: 10px 0;
   width: 300px;
@@ -271,9 +275,9 @@ header .social {
   padding: 10px;
   width: 320px;
   height: 540px;
-  border: 2px solid royalblue;
-  border-top: 20px solid royalblue;
-  border-bottom: 20px solid royalblue;
+  border: 2px solid rgb(240, 121, 41);
+  border-top: 10px solid rgb(240, 121, 41);
+  border-bottom: 10px solid rgb(240, 121, 41);
   border-radius: 30px;
   position: relative;
   display: flex;
@@ -289,26 +293,26 @@ header .social {
 
 .cam {
   display: inline-block;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 100%;
   background-color: rgb(24, 24, 24);
   position: absolute;
-  top: -16px;
+  top: -10px;
   left: 50%;
   border: 0.5px solid silver;
   transform: translateX(-50%);
 }
 
 .dp {
-  margin: 20px;
+  margin: 20px 0;
   width: 180px;
   height: 180px;
   border-radius: 100%;
 }
 
 .mob h2 {
-  margin: 10px;
+  margin: 10px 0;
   text-align: center;
   font-size: 1.7rem;
   letter-spacing: 1px;
@@ -324,14 +328,14 @@ header .social {
   margin: 20px;
   padding: 10px 20px;
   font-size: 1.1rem;
-  border: 2px solid royalblue;
+  border: 2px solid rgb(240, 121, 41);
   border-radius: 10px;
   transition: 0.4s;
 }
 
 .mob-contact:hover {
   color: white !important;
-  background-color: royalblue !important;
+  background-color: rgb(240, 121, 41) !important;
 }
 
 /* tablet */
@@ -340,8 +344,8 @@ header .social {
   padding: 10px;
   width: 800px;
   height: 350px;
-  border: 20px solid royalblue;
-  border-bottom: 40px solid royalblue;
+  border: 10px solid rgb(240, 121, 41);
+  border-bottom: 20px solid rgb(240, 121, 41);
   border-radius: 30px;
   position: relative;
   transition: box-shadow 0.4s, transform 0.2s;
@@ -355,12 +359,12 @@ header .social {
 .tab-btn {
   display: inline-block;
   background-color: rgb(24, 24, 24);
-  width: 80px;
-  height: 25px;
+  width: 60px;
+  height: 15px;
   border: 0.5px solid silver;
   border-radius: 20px;
   position: absolute;
-  bottom: -32px;
+  bottom: -17px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -405,6 +409,7 @@ header .social {
   margin: 10px;
   width: 200px;
   height: 300px;
+  border: 2px solid rgb(240, 121, 41);
   border-radius: 5px;
   position: relative;
   overflow: hidden;
@@ -534,6 +539,11 @@ header .social {
     margin: 20px;
   }
 
+  .mob {
+    width: 280px;
+    height: 520px;
+  }
+
   .skills {
     padding: 20px;
   }
@@ -622,7 +632,7 @@ header .social {
 }
 
 .dark .intro .fa:hover {
-  box-shadow: 2px 5px 5px rgb(108, 108, 108);
+  box-shadow: 2px 5px 50px rgb(108, 108, 108);
 }
 
 .dark .mob,
@@ -655,7 +665,7 @@ header .social {
 .dark .skill {
   color: rgb(224, 224, 224);
   background-color: rgb(32, 32, 32);
-  box-shadow: 2px 2px 4px rgb(88, 88, 88);
+  box-shadow: 2px 2px 4px rgb(64, 64, 64);
 }
 
 .dark .skill::before {

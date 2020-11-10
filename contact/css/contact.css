@@ -154,7 +154,7 @@ textarea.has-value+label {
     color: rgb(48, 48, 48);
     padding: 8px 15px;
     font-size: 1.2rem;
-    border: 2px solid rgb(88, 88, 233);
+    border: 2px solid rgb(15, 130, 200);
     border-radius: 4px;
     position: relative;
     z-index: 1;
@@ -167,7 +167,7 @@ textarea.has-value+label {
 
 .contact-btn::before {
     content: "";
-    background-color: rgb(88, 88, 232);
+    background-color: rgb(15, 130, 200);
     position: absolute;
     top: 0;
     left: 0;

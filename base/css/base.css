@@ -154,7 +154,7 @@ a {
   left: 0;
   display: flex;
   flex-direction: column;
-  border: 2px solid rgb(15, 130, 200);
+  border: 2px solid rgb(10, 100, 200);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   overflow: hidden;
@@ -163,13 +163,13 @@ a {
 }
 
 .internal-nav .link {
-  width: 60px;
-  height: 60px;
+  padding: 12px;
+
 }
 
 .internal-nav .fa {
   font-size: 2rem;
-  padding: 12px;
+
 }
 
 .internal-nav .fa:hover {
@@ -206,7 +206,7 @@ a {
 }
 
 .internal-nav .active {
-  background-color: rgb(15, 130, 200);
+  background-color: rgba(10, 100, 200, 0.8);
 
 }
 
@@ -292,6 +292,7 @@ footer .fa-youtube {
 footer p {
   position: absolute;
   bottom: 10px;
+  font-size: 1rem;
   text-align: center;
   letter-spacing: 0.8px;
 }
@@ -386,11 +387,6 @@ footer p {
     transform: translateX(-50%);
   }
 
-  .internal-nav * {
-    width: 50px;
-    height: 50px;
-  }
-
   .internal-nav svg {
     display: none;
   }
@@ -434,8 +430,10 @@ footer p {
   footer {
     padding: 10px 50px;
     height: 150px;
+
   }
 
+  /* moblie font size */
   * {
     font-size: 88%;
   }
