@@ -1,35 +1,80 @@
-// pr-loader scripts 
-window.addEventListener('load', function () {
-    document.querySelector('body').classList.add("loaded")
-});
+// theme funtions
 
-// theme local storage
 if (localStorage.getItem("theme") === null) {
-    localStorage.setItem("theme", "dark")
+    localStorage.setItem("theme", "light")
 }
 
-/* top nav */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    
-    if (x.className === "topnav") {
-    x.className += " responsive";
-    } else {
-        x.className = "topnav";
+const body = document.querySelector("body")
+let currentTheme = localStorage.getItem("theme")
+body.classList.add(currentTheme)
+
+
+// change current theme
+const light = document.querySelector("#light")
+const dark = document.querySelector("#dark")
+
+light.onclick = () => {
+    changeTheme("light")
+}
+dark.onclick = () => {
+    changeTheme("dark")
+}
+
+function changeTheme(theme) {
+    localStorage.setItem("theme", theme)
+    body.className = theme + " loaded"
+
+}
+
+// theme pack visibility
+const themeBtn = document.querySelector("#theme-btn")
+const themes = document.querySelector("#themes")
+const Overlay = document.querySelector(".overlay")
+
+themeBtn.onclick = () => {
+    themesVisibility()
+}
+Overlay.onclick = () => {
+    themesVisibility()
+}
+
+function themesVisibility() {
+    themes.classList.toggle("visible")
+    Overlay.classList.toggle("visible")
+}
+
+// sticky resize top bar 
+const headerHeight = document.querySelector("header").offsetHeight
+window.addEventListener("scroll", function () {
+    const topBar = document.querySelector(".top-bar"),
+        scroll = window.pageYOffset | document.body.scrollTop;
+
+    if (scroll > headerHeight) {
+        topBar.classList.add("scrolled")
+    } else if (scroll + 20 < headerHeight) {
+        topBar.className = topBar.className.replace("scrolled", "")
+    }
+});
+
+// mobile menu 
+
+const menuBar = document.querySelector(".menu-bar")
+const navContainer = document.querySelector(".navigations")
+
+menuBar.onclick = () => {
+    menuFunction()
+}
+
+const internalNavs = document.querySelectorAll(".link")
+internalNavs.forEach(closeNav)
+
+function closeNav(el) {
+    el.onclick = () => {
+        menuFunction()
     }
 }
 
-/* theme pack display */
-const theme_btn = document.querySelector("#theme-btn")
-const theme_pack = document.querySelector("#theme-pack")
-const remove_btn = document.querySelector("#the-close")
-
-theme_btn.onclick = () => {
-    theme_pack.style.display = "flex"
-
+function menuFunction() {
+    menuBar.classList.toggle("close-bar");
+    navContainer.classList.toggle("mob-navigations")
 }
-remove_btn.onclick = () => {
-    theme_pack.style.display = "none"
-    
-}
-
