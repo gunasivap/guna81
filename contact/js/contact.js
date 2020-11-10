@@ -14,3 +14,12 @@ function labelAnimation(el) {
         }
     })
 }
+
+
+// prevent message from submitting
+const contactForm = document.querySelector("#contact-form")
+
+contactForm.onsubmit = (e) => {
+    alert("Contact form currently unavailable. Please contact via email")
+    e.preventDefault()
+}
