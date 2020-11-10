@@ -25,10 +25,25 @@ header h1 {
     padding-bottom: 40px;
 }
 
+.email-id {
+    margin-top: 20px;
+}
+
+.email-id {
+    font-size: 1.2rem;
+}
+
+.email-id p {
+    margin: 20px 0;
+}
+
+.email-id a {
+    color: rgb(28, 78, 212);
+}
 
 /* social */
 .social-contact h2 {
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 
 .social-contact .fa {
