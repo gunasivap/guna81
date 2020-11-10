@@ -232,7 +232,7 @@ header {
 
 
 /* social icons */
-header .social {
+.intro .social {
   margin-top: 20px;
 }
 
@@ -490,6 +490,16 @@ header .social {
 
 /* responsive media queries */
 
+@media screen and (max-width: 940px) {
+  .header-shape {
+    display: none;
+  }
+
+  #spider-section {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 720px) {
 
   .circle-inner {
@@ -501,13 +511,6 @@ header .social {
     font-size: 1.5rem;
   }
 
-  #spider-section {
-    display: none;
-  }
-
-  .header-shape {
-    display: none;
-  }
 
   .intro #static {
     display: block;
@@ -515,6 +518,10 @@ header .social {
 
   .intro #type-writing {
     display: none;
+  }
+
+  .intro .social {
+    margin-top: 10px;
   }
 
   .intro .fa {

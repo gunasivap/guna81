@@ -1,12 +1,18 @@
 // spider moving animation
+const moveRight = document.querySelector(".right-move")
+const moveLeft = document.querySelector(".left-move")
 const spider = document.querySelector("#spider-section")
 
-function moveSpider(move) {
-  if (move === "right") {
-    spider.style.transform = "translateX(200px)"
-  } else {
-    spider.style.transform = "translateX(-200px)"
-  }
+moveRight.onmouseover = () => {
+  moveSpider("translateX(200px)")
+}
+moveLeft.onmouseover = () => {
+  moveSpider("translateX(-200px)")
+}
+
+function moveSpider(transformValue) {
+  spider.style.transform = transformValue
+  
 }
 
 /* type writer */

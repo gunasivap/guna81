@@ -23,7 +23,7 @@ header>* {
     float: right;
     padding: 8px 16px;
     font-size: 1.1rem;
-    border: 2px solid royalblue;
+    border: 2px solid rgb(15, 130, 200);
     border-radius: 4px;
     transition: 0.4s;
 }
@@ -31,7 +31,7 @@ header>* {
 
 .visit-btn:hover {
     color: white;
-    background-color: royalblue !important;
+    background-color: rgb(15, 130, 200) !important;
 }
 
 
@@ -167,12 +167,12 @@ h2 {
 .techs ul {
     padding: 0 20px;
     list-style-position: inside;
+    font-size: 1.1rem;
 }
 
 .techs li {
     margin: 5px;
     padding: 5px;
-    font-size: 1.2rem;
 }
 
 .source p,
@@ -182,7 +182,7 @@ h2 {
 
 .source a {
     margin: 5px 10px;
-    color: blueviolet;
+    color: rgb(28, 78, 212);
 }
 
 /* responsive media queries */

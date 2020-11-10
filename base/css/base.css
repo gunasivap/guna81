@@ -462,10 +462,10 @@ footer p {
  primary bg - white
  secondary bg - rgb(224, 224, 224)
 
- primary elements bg - rgb(212, 212, 212);
+ primary elements - rgb(212, 212, 212);
 
  primary shadow - rgb(128, 128, 128);
- secondary shadow -rgba(212, 212, 212, 0.5);
+ 
 */
 
 .light {
@@ -528,18 +528,17 @@ footer p {
 /* dark theme */
 
 /*
- color - rgb(12, 184, 12)
+ highlight color - rgb(12, 184, 12)
 
- primary color - rgb(24, 24, 24)
- secondary color -  rgb(48, 48, 48)
+ primary color - white
+ secondary color -  rgb(224, 224, 224)
 
- primary bg - white
- secondary bg - rgb(224, 224, 224)
+ primary bg - rgb(48, 48, 48)
+ secondary bg - rgb(24, 24, 24)
 
- primary element bg - rgb(32, 32, 32);
+ primary element - rgb(32, 32, 32);
 
  primary shadow - rgb(108, 108, 108);
- secondary shadow - rgb(88, 88, 88);
 */
 
 .dark {
