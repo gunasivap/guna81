@@ -1,0 +1,288 @@
+/* element styles */
+
+.container {
+    margin: 20px auto;
+    width: 60%;
+}
+
+header {
+    margin: 20px 0;
+}
+
+header>* {
+    padding: 10px 0;
+}
+
+.title h1 {
+    display: inline-block;
+    font-size: 2rem;
+    letter-spacing: 1.2px;
+}
+
+.visit-btn {
+    float: right;
+    padding: 8px 16px;
+    font-size: 1.1rem;
+    border: 2px solid rgb(15, 130, 200);
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+
+.visit-btn:hover {
+    color: white;
+    background-color: rgb(15, 130, 200) !important;
+}
+
+
+header p {
+    color: rgb(48, 48, 48);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/* image container */
+.small-image figure {
+    margin: 10px 0;
+    position: relative;
+}
+
+.current-img {
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    animation: animate 0.4s;
+}
+
+/* image animation */
+@keyframes animate {
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.prev,
+.next {
+    margin: 5px;
+    padding: 8px 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    border-radius: 100%;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.4s;
+}
+
+.prev {
+    left: 0;
+
+}
+
+.next {
+    right: 0;
+
+}
+
+.switch-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.circle {
+    display: inline-block;
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+
+}
+
+.circle.active {
+    width: 22px;
+    height: 22px;
+}
+
+/* popup model */
+#popup-model {
+    padding: 20px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    overflow: auto;
+}
+
+#popup-model .close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.full-image {
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-image .current-img {
+    max-height: 100%;
+
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+}
+
+
+.techs li {
+    list-style-type: circle;
+}
+
+.techs ul {
+    padding: 0 20px;
+    list-style-position: inside;
+    font-size: 1.1rem;
+}
+
+.techs li {
+    margin: 5px;
+    padding: 5px;
+}
+
+.source p,
+.source a {
+    font-size: 1.1rem;
+}
+
+.source a {
+    margin: 5px 10px;
+    color: rgb(28, 78, 212);
+}
+
+/* responsive media queries */
+
+@media screen and (max-width: 720px) {
+    .container {
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    #popup-model {
+        padding: 0;
+    }
+
+    .full-image {
+        width: 100%;
+    }
+
+}
+
+/* light theme */
+
+.light .visit-btn {
+    color: rgb(48, 48, 48);
+    background-color: rgb(212, 212, 212);
+}
+
+.light header p {
+    color: rgb(48, 48, 48);
+}
+
+.light .prev,
+.light .next {
+    color: rgb(48, 48, 48);
+    background-color: rgba(212, 212, 212, 0.4);
+}
+
+.light .prev:hover,
+.light .next:hover {
+    background-color: rgba(212, 212, 212, 0.6);
+
+}
+
+.light .circle {
+    background-color: rgb(212, 212, 212);
+}
+
+.light .circle.circle.active {
+    box-shadow: inset 2px 2px 4px silver;
+}
+
+.light #popup-model {
+    background-color: rgb(255, 255, 255);
+}
+
+.light .about p,
+.light .techs li,
+.light .source p {
+    color: rgb(48, 48, 48);
+}
+
+
+/* dark theme */
+
+.dark .visit-btn {
+    color: rgb(224, 224, 224);
+    background-color: rgb(32, 32, 32);
+}
+
+
+.dark header p {
+    color: rgb(224, 224, 224);
+}
+
+.dark .prev,
+.dark .next {
+    color: rgb(224, 224, 224);
+    background-color: rgba(48, 48, 48, 0.4);
+}
+
+.dark .prev:hover,
+.dark .next:hover {
+    background-color: rgba(48, 48, 48, 0.6);
+
+}
+
+.dark .circle {
+    background-color: rgb(112, 112, 112);
+}
+
+.dark .circle.circle.active {
+    box-shadow: inset 2px 2px 4px silver;
+}
+
+.dark #popup-model {
+    background-color: rgb(48, 48, 48);
+}
+
+.dark .about p,
+.dark .techs li,
+.dark .source p {
+    color: rgb(224, 224, 224);
+}
