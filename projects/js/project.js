@@ -5,8 +5,8 @@ for (let i = 0; i < imgSources.length; i++) {
 
     const imgCircle = document.createElement("span")
     imgCircle.setAttribute("class", "circle");
-    (i === 0) ? imgCircle.setAttribute("class", "circle active"):
-        imgCircle.dataset.srcIndex = i
+    if (i === 0)  imgCircle.setAttribute("class", "circle active")
+    imgCircle.dataset.srcIndex = i
     switchContainer.appendChild(imgCircle)
 }
 
@@ -32,7 +32,7 @@ function changeSoruce(n) {
     for (let i = 0; i < circles.length; i++) {
         circles[i].className = circles[i].className.replace(" active", "");
     }
-
+    console.log(n)
     circles[n].classList.add("active")
 
 }
@@ -73,7 +73,9 @@ switchContainer.addEventListener("click", (e) => {
 
     if (e.target.tagName.toLowerCase() === 'span') {
         currentSource = parseInt(e.target.dataset.srcIndex)
+        console.log(currentSource)
         changeSoruce(currentSource)
+
 
     }
 })
