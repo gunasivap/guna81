@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Neumorphic Calculator - Guna81 Apps</title>
+
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A neumorphic calculator using html, css ,js">
+    <meta name="keywords" content="calculator, html, javaScript">
+    <meta name="author" content="Guna">
+
+    <!-- static assets -->
+    <!-- fevicon -->
+    <link rel="shortcut icon" type="image/png" href="../../base/img/logo.png">
+
+    <!-- icon fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../base/css/base.css">
+    <link rel="stylesheet" href="../css/project.css">
+
+    <!-- js -->
+    <script defer src="../../base/js/base.js"></script>
+    <script defer src="js/calculator.js"></script>
+    <script defer src="../js/project.js"></script>
+
+</head>
+
+<body>
+    <!-- top bar section -->
+    <div class="top-bar primary-bg">
+        <div class="brand">
+            <a class="logo" href="../..">
+                <img src="../../base/img/logo.png" alt="guna81">
+            </a>
+        </div>
+
+        <div class="fixed-section">
+            <div class="menu-bar-section">
+                <div class="menu-bar">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+
+            <div class="navigations">
+                <nav class="internal-nav">
+
+                    <svg id="theme-btn" viewBox="0 0 16 16" class="bi bi-gear-fill" width="35px" ; height="35px" ;
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z" />
+                    </svg>
+                </nav>
+
+                <div id="themes">
+                    <span id="dark"></span>
+                    <span id="light"></span>
+                </div>
+
+                <nav class="external-nav">
+                    <a class="nav-link" href="../..">HOME</a>
+                    <a class="nav-link" href="..">PROJECTS</a>
+                    <a class="nav-link" href="http://genius81.epizy.com" target="_blank">BLOG</a>
+                    <a class="nav-link" href="../../contact">CONTACT</a>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- apps Details -->
+    <div class="container primary-bg">
+        <header>
+            <div class="title">
+                <h1>Neumorphic Calculator</h1>
+                <a href="https://gunasivap.github.io/neumorphic-calculator/" target="_blank"><button
+                        class="visit-btn">Visit</button></a>
+            </div>
+            <p>A Neumorphic Calculator using JavaScript</p>
+        </header>
+
+        <section class="image-container">
+
+            <div class="small-image">
+                <figure>
+                    <img class="current-img" src="img/ssht0.png" alt="calculator" title="Click to fullscreen"
+                        id="open-pic">
+
+                    <span class="prev">&#10094;</span>
+                    <span class="next">&#10095;</span>
+
+                </figure>
+
+                <div class="switch-img">
+
+                </div>
+            </div>
+
+            <div id="popup-model">
+                <span class="close" id="close-pic">&times;</span>
+
+                <div class="full-image">
+                    <img class="current-img" src="img/ssht0.png" alt="calculator">
+                </div>
+
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+            </div>
+
+        </section>
+
+        <section class="about">
+            <h2>About</h2>
+            <p>A simple calculator with neumorphism style using javaScript. User can compute basic math functions and toggle
+                between light and dark theme</p>
+
+        </section>
+
+        <section class="techs">
+            <h2>Tehchnologies</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+        </section>
+
+        <section class="source">
+            <h2>Source</h2>
+            <p>Github Chat box - <a href="https://github.com/gunasivap/neumorphic-calculator.git" target="_blank">get source</a></p>
+        </section>
+    </div>
+
+    <!-- footer section-->
+    <footer class="secondary-bg">
+        <div class="footer-left">
+            <ul class="bottom-nav">
+                <li><a href="../..">Home</a></li>
+                <li><a href="..">Projects</a></li>
+                <li><a href="http://genius81.epizy.com">Blog</a></li>
+                <li><a href="../../contact">Contact</a></li>
+            </ul>
+            <p>
+                Guna81 <span>&copy;</span> 2020
+            </p>
+        </div>
+
+        <div class="footer-right">
+            <div class="social">
+                <a class="fa fa-facebook" href="https://www.facebook.com/guna8100" target="_blank"></a>
+                <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCYcYgAfz7ApEMhwo2ItvO1w"
+                    target="_blank"></a>
+            </div>
+            <p>Created By Guna</p>
+        </div>
+    </footer>
+
+    <!-- overlay-->
+    <div class="overlay"></div>
+
+</body>
+
+</html>
