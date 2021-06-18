@@ -1,0 +1,320 @@
+@import "variables";
+
+/* header */
+.home > .container {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home > .container > div {
+  // flex: 1;
+  min-width: 400px;
+}
+
+/* intro */
+.intro {
+  margin: 0;
+}
+
+.intro h1 {
+  line-height: 1.5;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.intro h1 div:first-child {
+  font-size: 20px;
+  color: #607d8b;
+}
+
+.intro h1 div:nth-child(2) {
+  font-size: 50px;
+  color: #546e7a;
+}
+
+.intro h1 div:nth-child(2) span {
+  color: $secondaryColor;
+}
+
+.intro h1 div:nth-child(3) {
+  font-size: 50px;
+  color: #37474f;
+}
+
+.toon-me img {
+  width: 400px;
+  object-fit: contain;
+  border-radius: 200px;
+}
+
+/* about */
+.about-container {
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.toon-me2 img {
+  width: 400px;
+  object-fit: contain;
+}
+
+// skills
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 140px);
+  // grid-auto-rows: 150px;
+  grid-gap: 40px;
+}
+
+.skill {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgb(220, 220, 220);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill img {
+  padding: 10px;
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.skill div {
+  font-size: 15px;
+  color: rgb(73, 72, 72);
+  height: 20%;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  justify-content: space-around;
+  grid-gap: 20px;
+}
+
+.project {
+  flex: 1;
+  min-height: 400px;
+  background-color: #1de9b6;
+  box-shadow: 0 0 20px rgb(220, 220, 220);
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: calc(100% - 100px);
+  object-fit: contain;
+}
+
+.project h3 {
+  position: absolute;
+  color: white;
+  width: 100%;
+  font-size: 15px;
+  top: 0;
+  padding: 10px;
+  text-align: right;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent);
+  z-index: 10;
+}
+
+.project p {
+  // position: absolute;
+  // bottom: 0;
+  // margin: 0;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  background-color: white;
+}
+
+.project a {
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #d500f9;
+  z-index: 20;
+}
+
+footer p,
+footer a {
+  font-size: 17px;
+}
+
+footer a {
+  font-weight: bold;
+  color: blue;
+}
+
+// contact
+.social {
+  position: fixed;
+  left: 20px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 100%;
+}
+
+.social a {
+  margin-bottom: 15px;
+}
+
+.social .fa {
+  font-size: 24px;
+  color: #546e7a;
+}
+
+.social .fa:hover {
+  font-size: 24px;
+  color: $primaryColor;
+}
+
+.mail {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 100%;
+}
+
+.mail a {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #546e7a;
+  writing-mode: vertical-lr;
+}
+
+.mail a:hover {
+  color: $primaryColor;
+}
+
+.social::before {
+  content: "";
+  margin-bottom: 15px;
+  background-color: #546e7a;
+  width: 1px;
+  height: 100px;
+}
+
+.mail::after {
+  content: "";
+  margin-top: 15px;
+  background-color: #546e7a;
+  width: 1px;
+  height: 100px;
+}
+
+/* responsive */
+@media screen and (max-width: 720px) {
+  /* header */
+  .home > .container {
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .home > .container > div {
+    margin: 20px 0;
+    min-width: 300px;
+  }
+
+  /* intro */
+  .intro {
+    text-align: center;
+  }
+
+  .intro h1 div:first-child {
+    font-size: 15px;
+  }
+
+  .intro h1 div:nth-child(2) {
+    font-size: 30px;
+  }
+
+  .intro h1 div:nth-child(3) {
+    font-size: 30px;
+  }
+
+  .toon-me img {
+    width: 300px;
+  }
+
+  .about-container {
+    flex-wrap: wrap;
+  }
+
+  .toon-me2 img {
+    width: 300px;
+    object-fit: contain;
+  }
+
+  .project-container {
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
+
+  // contact
+  .social {
+    position: static;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    width: unset;
+    height: unset;
+  }
+
+  .social a {
+    margin-right: 15px;
+  }
+
+  .mail {
+    position: static;
+    right: 0;
+    bottom: 0;
+    display: block;
+    text-align: center;
+    width: unset;
+    height: unset;
+  }
+
+  .mail a {
+    writing-mode: unset;
+  }
+
+  .mail a:hover {
+    color: $primaryColor;
+  }
+
+  .social::before {
+    display: none;
+  }
+
+  .mail::after {
+    display: none;
+  }
+}

@@ -1,259 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Guna - Developer</title>
 
     <!-- meta data -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="I am Guna, a passionate web developer and programmer from India. Working with the latest web technologies and more">
-    <meta name="keywords" content="programmer, web-developer, software-developer">
-    <meta name="author" content="Guna">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="I am Guna, A passionate web developer and programmer from India."
+    />
+    <meta
+      name="keywords"
+      content="guna, programmer, web-developer, software-developer"
+    />
+    <meta name="author" content="Guna" />
 
-    <!-- static assets -->
     <!-- fevicon -->
-    <link rel="shortcut icon" type="image/png" href="base/img/logo.png">
+    <link rel="shortcut icon" type="image/png" href="./img/logo/g-logo.png" />
 
-    <!-- icon fonts-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icon fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- css -->
-    <link rel="stylesheet" rel="stylesheet" href="base/css/base.css">
-    <link rel="stylesheet" rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" rel="stylesheet" href="css/index.css" />
 
     <!-- js -->
 
-    <script defer src="base/js/base.js"></script>
-    <script defer src="js/home.js"></script>
+    <!-- <script defer src="base/js/base.js"></script>
+    <script defer src="js/home.js"></script> -->
+  </head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177858283-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <body>
+    <!-- top bar -->
+    <header class="topbar">
+      <div class="container">
+        <a class="logo" href="./">
+          <img src="./img/logo/g-logo.png" alt="guna" />
+        </a>
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+        <nav>
+          <!-- <div class="menu-bar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div> -->
 
-        gtag('config', 'UA-177858283-2');
-    </script>
-
-</head>
-
-<body>
-
-    <!-- top bar section -->
-    <div class="top-bar primary-bg">
-        <div class="brand">
-            <a class="logo" href=".">
-                <img src="base/img/logo.png" alt="guna81">
-            </a>
-        </div>
-
-        <div class="fixed-section">
-            <div class="menu-bar-section">
-                <div class="menu-bar">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-            </div>
-
-            <div class="navigations">
-                <nav class="internal-nav">
-                    <a class="link" href="#home" onclick=""><i class="fa fa-home"></i></a>
-                    <a class="link" href="#about-me" onclick=""><i class="fa fa-address-card"></i></a>
-                    <a class="link" href="#skills" onclick=""><i class="fa fa-code"></i></a>
-
-                    <svg id="theme-btn" viewBox="0 0 16 16" class="bi bi-gear-fill" width="35px" ; height="35px" ;
-                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z" />
-                    </svg>
-                </nav>
-
-                <div id="themes">
-                    <span id="light"></span>
-                    <span id="dark"></span>
-                </div>
-
-                <nav class="external-nav">
-                    <a class="nav-link active" href=".">HOME</a>
-                    <a class="nav-link" href="projects">PROJECTS</a>
-                    <a class="nav-link" href="http://genius81.epizy.com" target="_blank">BLOG</a>
-                    <a class="nav-link" href="contact">CONTACT</a>
-                </nav>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- header section -->
-    <header id="home" class="primary-bg section">
-        <div id="spider-section">
-            <div class="web-spider">
-                <div class="web"></div>
-                <div class="spider">
-                    <img class="spider-img" src="img/spider.png" alt="spider">
-                    <span class="tool-tip">I am Web Developer</span>
-                    <div class="right-move"></div>
-                    <div class="left-move"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="intro">
-            <h1>
-                <div>Hello,</div>
-                <div>I am Guna,</div>
-                <div id="static">Web Developer</div>
-                <div id="type-writing"></div>
-            </h1>
-
-            <div class="social">
-                <a href="https://www.facebook.com/guna8100" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.youtube.com/channel/UCYcYgAfz7ApEMhwo2ItvO1w" target="_blank"><i
-                        class="fa fa-youtube"></i></a>
-            </div>
-        </div>
-
-        <div class="header-shape"></div>
+          <div class="nav-links">
+            <a class="" href="./#home">Home</a>
+            <a class="" href="#about">About</a>
+            <a class="" href="#devskills">DevSkills</a>
+            <a class="" href="#projects">Projects</a>
+            <!-- <a class="" href="#contact">Contact</a> -->
+          </div>
+        </nav>
+      </div>
     </header>
 
-
-    <!-- about me section -->
-    <section id="about-me" class="about-me secondary-bg section">
-        <div class="mob">
-            <span class="cam"></span>
-            <img class="dp" src="img/avatar.png" alt="display picture">
-            <div class="bio">
-                <h2>Bio</h2>
-                <p><span>Age :</span> 21</p>
-                <p><span>Place :</span> Tamil Nadu, India</p>
-                <p><span>Email :</span> gunasivapsg@gmail.com</p>
-            </div>
-            <a href="contact"><button class="mob-contact">Let's Talk</button></a>
+    <!-- home -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="intro">
+          <h1>
+            <div>Hi,</div>
+            <div>I am <span>Guna</span>,</div>
+            <div>Web Developer</div>
+          </h1>
         </div>
 
-        <div id="tilt" class="tab">
-            <h2>About Me</h2>
-            <p class="about">
-                Hi, I am Guna. A passionate web developer from India. I will develop fast and dynamic websites with easy
-                to understand hand-coding. I will develop awesome WordPress websites. I love developing web software.
-                Available for freelance or remote jobs. I will do the best in my work. If you need help, feel free to
-                contact me. Have a good time.
-            </p>
-            <span class="tab-btn"></span>
+        <div class="toon-me">
+          <img src="./img/me/guna.png" alt="guna" />
         </div>
-
+      </div>
     </section>
 
-    <!-- skills section -->
-    <section id="skills" class="skills primary-bg section">
-        <h2>My Skills</h2>
+    <!-- about -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-container">
+          <div class="toon-me2">
+            <img src="./img/me/guna2.png" alt="guna" />
+          </div>
+
+          <div class="content">
+            <h4>Hi, I am Guna. A passionate web developer from India.</h4>
+            <p>
+              Hi, I am Guna. A passionate web developer from India. I will
+              develop fast and dynamic websites with easy to understand
+              hand-coding. I will develop awesome WordPress websites. I love
+              developing web software. Available for freelance or remote jobs. I
+              will do the best in my work. If you need help, feel free to
+              contact me. Have a good time.
+            </p>
+            <!-- <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+              a aliquam consectetur facere ducimus! Enim non nisi eius obcaecati
+              illum asperiores amet id aut necessitatibus! Lorem, ipsum dolor
+              sit amet consectetur adipisicing elit. Dignissimos iure possimus,
+              voluptatem eaque quam error? Assumenda accusantium eligendi autem?
+              Corporis quam officiis voluptates vero magnam.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section id="devskills" class="skills">
+      <div class="container">
+        <h2>My DevSkills</h2>
 
         <div class="skill-container">
-
-            <div class="html skill">
-                <div class="img-section">
-                    <img src="img/skills/html.svg" alt="html">
-                </div>
-                <div class="text-section">
-                    <h3>HTML</h3>
-
-                </div>
-            </div>
-
-            <div class="css skill">
-                <div class="img-section">
-                    <img src="img/skills/css.svg" alt="css">
-                </div>
-                <div class="text-section">
-                    <h3>CSS</h3>
-                    <ul>
-                        <li>Bootstrap</li>
-                        <li>Sass</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="js skill">
-                <div class="img-section">
-                    <img src="img/skills/javascript.svg" alt="javascript">
-                </div>
-                <div class="text-section">
-                    <h3>JavaScript</h3>
-                    <ul>
-                        <li>Jquery</li>
-                        <li>Ajax</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="python skill">
-                <div class="img-section">
-                    <img src="img/skills/python.svg" alt="python">
-                </div>
-                <div class="text-section">
-                    <h3>Python</h3>
-                    <ul>
-                        <li>Flask</li>
-                        <li>Django</li>
-                    </ul>
-                </div>
-            </div>
-
+          <div class="skill">
+            <img src="./img/devskills/html-5.png" alt="html" />
+            <div>HTML</div>
+          </div>
+          <div class="skill">
+            <img src="./img/devskills/css-3.png" alt="css" />
+            <div>CSS</div>
+          </div>
+          <div class="skill">
+            <img src="./img/devskills/sass.png" alt="sass" />
+            <div>SASS</div>
+          </div>
+          <div class="skill">
+            <img src="./img/devskills/Bootstrap.png" alt="bootstrap" />
+            <div>Bootstrap</div>
+          </div>
+          <div class="skill">
+            <img src="./img/devskills/js.png" alt="javascript" />
+            <div>Javascript</div>
+          </div>
+          <div class="skill">
+            <img src="./img/devskills/jquery.gif" alt="jquery" />
+            <div>Jquery</div>
+          </div>
+          <div class="skill">
+            <img src="./img/devskills/react.png" alt="reactjs" />
+            <div>React Js</div>
+          </div>
+          <div class="skill">
+            <img src="./img/devskills/nextjs.png" alt="nextjs" />
+            <div>Next Js</div>
+          </div>
+          <div class="skill">
+            <img src="./img/devskills/python.png" alt="python" />
+            <div>Python</div>
+          </div>
+          <div class="skill">
+            <img src="./img/devskills/flask.png" alt="" />
+            <div>Flask</div>
+          </div>
+          <div class="skill">
+            <img src="./img/devskills/django.png" alt="django" />
+            <div>Django</div>
+          </div>
+          <div class="skill">
+            <img src="./img/devskills/firebase.png" alt="firebase" />
+            <div>Firebase</div>
+          </div>
+          <!-- <div class="skill">
+            <img src="./img/tech/git.png" alt="" />
+            <div>Git</div>
+          </div>
+           -->
         </div>
+      </div>
     </section>
 
-    <!-- footer section-->
-    <footer class="secondary-bg">
-        <div class="footer-left">
-            <ul class="bottom-nav">
-                <li><a href=".">Home</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="http://genius81.epizy.com">Blog</a></li>
-                <li><a href="contact">Contact</a></li>
-            </ul>
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-container">
+          <div class="project calc">
+            <h3>Neumorphic Calculator</h3>
+            <img src="./img/projects/calc-pjt.png" alt="" />
+            <a
+              href="https://guna81.github.io/neumorphic-calculator/"
+              target="_blank">Visit &#8594;</a>
+            <p>A simple calculator with neumorphism style using javaScript.</p>
+          </div>
+          <div class="project">
+            <h3>Todo App</h3>
+            <img src="./img/projects/todo-pjt.png" alt="" />
+            <a href="https://guna81.github.io/todo-app/" target="_blank"
+              >Visit &#8594;</a>
             <p>
-                Guna81 <span>&copy; </span>2020
+              A advanced Todo App with calendar using html, css, javascript.
             </p>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="footer-right">
-            <div class="social">
-                <a class="fa fa-facebook" href="https://www.facebook.com/guna8100" target="_blank"></a>
-                <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCYcYgAfz7ApEMhwo2ItvO1w"
-                    target="_blank"></a>
-            </div>
-            <p>Created By Guna</p>
-        </div>
+    <section>
+      <div class="social">
+        <a
+          href="https://github.com/guna81"
+          target="_blank"
+          class="fa fa-github"
+        ></a>
+        <a
+          href="https://instagram.com/guna.ps"
+          target="_blank"
+          class="fa fa-instagram"
+        ></a>
+        <a
+          href="https://facebook.com/guna81"
+          target="_blank"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://twitter.com/Guna76929153"
+          target="_blank"
+          class="fa fa-twitter"
+        ></a>
+        <a
+          href="https://github.com/guna81"
+          target="_blank"
+          class="fa fa-linkedin"
+        ></a>
+      </div>
+      <div class="mail">
+        <a href="mailto:gunaps810@gmail.com">gunaps810@gmail.com</a>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="">
+      <div class="container">
+        <p>Designed & Developed by <a href="./">Guna</a></p>
+      </div>
     </footer>
-
-    <!-- overlay -->
-    <div class="overlay"></div>
-
-    <!-- preloader -->
-    <div id="preloader-wrapper">
-        <div class="loader-circle">
-            <div class="circle-inner">
-                <div class="loader-left"></div>
-                <div class="loader-right"></div>
-            </div>
-        </div>
-        <div class="preloader-txt">Loading</div>
-    </div>
-
-    <script>
-        window.addEventListener('load', function () {
-            document.querySelector('body').classList.add("loaded")
-        });
-    </script>
-
-</body>
-
+  </body>
 </html>
