@@ -13,6 +13,7 @@
 }
 
 .topbar > .container {
+  padding: 10px 0;
   min-height: 80px;
   display: flex;
   justify-content: space-between;
@@ -30,7 +31,6 @@
 }
 
 /* navigation */
-
 
 /* top bar scroll shrink */
 .top-bar.scrolled {
@@ -63,7 +63,6 @@ footer p a {
 
 /* responsive */
 @media screen and (max-width: 720px) {
-
   .topbar > .container {
     min-height: 60px;
   }
@@ -79,9 +78,8 @@ footer p a {
   }
 }
 
-
 .nav__list {
-	display: flex;
+  display: flex;
   background-color: white;
   li {
     a {
@@ -92,96 +90,96 @@ footer p a {
       position: relative;
       transition: all ease-in-out 0.3s;
     }
-  
+
     a:hover {
       color: $primaryColor;
     }
   }
 
-	li::after {
-		content: "";
-		display: block;
-		height: 0.3rem;
-		background: $primaryColor;
-		border-radius: 3px;
-		transform: scale(0, 1);
-		transition: transform ease-in-out 0.3s;
-	}
-	li:hover::after {
-		transform: scale(1, 1);
-	}
+  li::after {
+    content: "";
+    display: block;
+    height: 0.3rem;
+    background: $primaryColor;
+    border-radius: 3px;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 0.3s;
+  }
+  li:hover::after {
+    transform: scale(1, 1);
+  }
 }
 
 .nav__item.nav.toggler .nav__list {
-	transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 .menu-btn {
-	margin-left: 1rem;
-	position: relative;
-	width: 40px;
-	height: 40px;
-	cursor: pointer;
-	display: none;
-	justify-content: center;
-	align-items: center;
-	transition: all 0.5s ease-in-out;
-	&__burger::after,
-	&__burger::before {
-		content: "";
-		position: absolute;
-	}
-	&__burger,
-	&__burger::after,
-	&__burger::before {
-		width: 30px;
-		height: 3.5px;
-		background: black;
-		transition: all 0.5s ease-in-out;
-		border-radius: 10px;
-	}
-	&__burger::after {
-		transform: translateY(-9px);
-	}
-	&__burger::before {
-		transform: translateY(9px);
-	}
+  margin-left: 1rem;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  &__burger::after,
+  &__burger::before {
+    content: "";
+    position: absolute;
+  }
+  &__burger,
+  &__burger::after,
+  &__burger::before {
+    width: 30px;
+    height: 3.5px;
+    background: black;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+  }
+  &__burger::after {
+    transform: translateY(-9px);
+  }
+  &__burger::before {
+    transform: translateY(9px);
+  }
 }
 .nav.toggler {
-	.menu-btn__burger {
-		transform: translateX(-25px);
-		background: transparent;
-	}
-	.menu-btn__burger::after {
-		transform: rotate(45deg) translate(18px, -18px);
-	}
-	.menu-btn__burger::before {
-		transform: rotate(-45deg) translate(18px, 18px);
-	}
+  .menu-btn__burger {
+    transform: translateX(-25px);
+    background: transparent;
+  }
+  .menu-btn__burger::after {
+    transform: rotate(45deg) translate(18px, -18px);
+  }
+  .menu-btn__burger::before {
+    transform: rotate(-45deg) translate(18px, 18px);
+  }
 }
 
 .nav.toggler .nav__list {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .nav.toggler .nav__list {
-	// top : 5rem;
-	transform: scale(1, 1);
+  // top : 5rem;
+  transform: scale(1, 1);
 }
 
 @media screen and (max-width: 768px) {
-	.nav__list {
-		flex-direction: column;
-		position: absolute;
-		right: 20px;
-		top: 60px;
-		padding: 1rem;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-		transform: scale(1, 0);
-		transform-origin: top;
-		transition: all 0.3s ease-in;
-	}
-	.menu-btn {
-		display: flex;
-	}
+  .nav__list {
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: all 0.3s ease-in;
+  }
+  .menu-btn {
+    display: flex;
+  }
 }
