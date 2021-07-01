@@ -31,23 +31,12 @@
 
     <!-- js -->
 
-    <!-- <script defer src="base/js/base.js"></script>
-    <script defer src="js/home.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.4.1/vanilla-tilt.min.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-S80CML6YSE"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-S80CML6YSE");
-    </script>
+    <script defer src="./js/base.js"></script>
+    <script defer src="./js/index.js"></script>
   </head>
 
   <body>
@@ -58,19 +47,23 @@
           <img src="./img/logo/g-logo.png" alt="guna" />
         </a>
 
-        <nav>
-          <!-- <div class="menu-bar">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div> -->
-
-          <div class="nav-links">
-            <a class="" href="./#home">Home</a>
-            <a class="" href="#about">About</a>
-            <a class="" href="#devskills">DevSkills</a>
-            <a class="" href="#projects">Projects</a>
-            <!-- <a class="" href="#contact">Contact</a> -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a class="" href="./#home">Home</a>
+            </li>
+            <li>
+              <a class="" href="#about">About</a>
+            </li>
+            <li>
+              <a class="" href="#devskills">DevSkills</a>
+            </li>
+            <li>
+              <a class="" href="#projects">Projects</a>
+            </li>
+          </ul>
+          <div class="menu-btn" type='button'>
+            <div class="menu-btn__burger"></div>
           </div>
         </nav>
       </div>
@@ -83,7 +76,7 @@
           <h1>
             <div>Hi,</div>
             <div>I am <span>Guna</span>,</div>
-            <div>Web Developer</div>
+            <div id="typing-txt"></div>
           </h1>
         </div>
 
@@ -197,17 +190,14 @@
             <img src="./img/projects/calc-pjt.png" alt="" />
             <a
               href="https://guna81.github.io/neumorphic-calculator/"
-              target="_blank"
-              >Visit &#8594;</a
-            >
+              target="_blank">Visit &#8594;</a>
             <p>A simple calculator with neumorphism style using javaScript.</p>
           </div>
           <div class="project">
             <h3>Todo App</h3>
             <img src="./img/projects/todo-pjt.png" alt="" />
             <a href="https://guna81.github.io/todo-app/" target="_blank"
-              >Visit &#8594;</a
-            >
+              >Visit &#8594;</a>
             <p>
               A advanced Todo App with calendar using html, css, javascript.
             </p>

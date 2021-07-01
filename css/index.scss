@@ -21,6 +21,7 @@
 
 .intro h1 {
   line-height: 1.5;
+  
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -40,6 +41,7 @@
 
 .intro h1 div:nth-child(3) {
   font-size: 50px;
+  white-space: nowrap;
   color: #37474f;
 }
 

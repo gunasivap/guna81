@@ -44,6 +44,7 @@
 
 .intro h1 div:nth-child(3) {
   font-size: 50px;
+  white-space: nowrap;
   color: #37474f;
 }
 
